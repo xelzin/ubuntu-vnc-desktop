@@ -1,3 +1,7 @@
+<b><h1>Docker Image</h1></b>
+https://hub.docker.com/r/ryanwarwick/chia-docker-vnc-desktop
+
+```docker pull ryanwarwick/chia-docker-vnc-desktop```
 <b><h1>QUICKSTART</h1></b>
 
 <h3>TO RUN:</h3>
