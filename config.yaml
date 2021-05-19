@@ -143,7 +143,7 @@ jobs:
     threads: 4
     buckets: 128
     memory_buffer: 3600
-    max_concurrent: 6
+    max_concurrent: 8
     max_concurrent_with_start_early: 8
     stagger_minutes: 25
     max_for_phase_1: 4

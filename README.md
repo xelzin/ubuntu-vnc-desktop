@@ -28,6 +28,8 @@ https://hub.docker.com/r/ryanwarwick/chia-docker-vnc-desktop
 VNC Web UI is available at ```http://IP_ADDRESS:8084``` after initializing container.     <i>// where IP_ADDRESS is localhost if accessing on host PC, otherwise ip address of docker container/host</i>
 
 
+Edit config.yaml in /Swar-Chia-Plot-Manager to change plotting job settings before running Chia Plot Manager app.
+
 <h2>Credits</h2>
 <ul>
 <li>Chia Plot Manager - https://github.com/swar/Swar-Chia-Plot-Manager</li>
