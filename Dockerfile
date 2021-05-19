@@ -27,6 +27,8 @@ ADD ./chia-manager.desktop /usr/share/applications/chia-manager.desktop
 ADD ./runGUI.sh runGUI.sh
 ADD ./runPlotManager.sh runPlotManager.sh
 ADD ./setupPlotManager.sh setupPlotManager.sh
+ADD ./chiaSetup.sh chiaSetup.sh
 RUN chmod +x ./runGUI.sh && chmod +x ./runPlotManager.sh
 RUN chmod +x ./setupPlotManager.sh && ./setupPlotManager.sh $USER
+RUN chmod +x ./chiaSetup.sh && ./chiaSetup.sh
 ENTRYPOINT ["./entrypoint.sh"]
