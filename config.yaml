@@ -184,14 +184,14 @@ jobs:
     destination_directory: /plots
     size: 32
     bitfield: true
-    threads: 4
+    threads: 6
     buckets: 128
-    memory_buffer: 4000
-    max_concurrent: 4
-    max_concurrent_with_start_early: 4
+    memory_buffer: 3600
+    max_concurrent: 10
+    max_concurrent_with_start_early: 10
     initial_delay_minutes: 0
-    stagger_minutes: 25
-    max_for_phase_1: 2
+    stagger_minutes: 30
+    max_for_phase_1: 6
     concurrency_start_early_phase: 4
     concurrency_start_early_phase_delay: 0
     temporary2_destination_sync: false
