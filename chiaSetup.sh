@@ -2,7 +2,7 @@
 cd /chia-blockchain
 . ./activate
 chia init
-if [ "$KEYS== "generate" ]; then
+if [ "$KEYS"== "generate" ]; then
   echo "to use your own keys pass them as a text file -v /path/to/keyfile:/path/in/container and -e keys=\"/path/in/container\""
   chia keys generate
 else

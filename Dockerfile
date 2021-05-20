@@ -12,7 +12,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y git lsb-
 RUN echo "cloning $BRANCH"
 WORKDIR /
 RUN git clone --branch $BRANCH https://github.com/Chia-Network/chia-blockchain.git
-RUN git clone https://github.com/swar/Swar-Chia-Plot-Manager.git
+RUN git clone --branch v.0.1.0 https://github.com/swar/Swar-Chia-Plot-Manager.git
 ADD ./config.yaml /Swar-Chia-Plot-Manager/config.yaml
 WORKDIR /chia-blockchain
 ADD ./baseSetup.sh baseSetup.sh
