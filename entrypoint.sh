@@ -73,7 +73,11 @@ HTTP_PASSWORD=
 
 chmod 1777 /dev/shm
 sed -i "s|folder_path:|folder_path: $HOME/.chia/mainnet/log|g" /Swar-Chia-Plot-Manager/config.yaml
-chmod 777 /Swar-Chia-Plot-Manager
+chmod -R 777 /Swar-Chia-Plot-Manager
+chmod -R 777 /chia-blockchain
+echo "$USER  ALL= NOPASSWD: /usr/bin/apt-get" >> /etc/sudoers
+echo "$USER  ALL= NOPASSWD: /usr/bin/git" >> /etc/sudoers
+echo "$USER  ALL= NOPASSWD: /usr/bin/npm" >> /etc/sudoers
 sudo -u $USER /chia-blockchain/chiaSetup.sh $KEYS $HOME
 exec /bin/tini -- supervisord -n -c /etc/supervisor/supervisord.conf
 
