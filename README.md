@@ -38,7 +38,7 @@ Edit config.yaml in /Swar-Chia-Plot-Manager to change plotting job settings befo
 </ul>
 
 <h2>Notes</h2>
-Chia version updated as of: 20-5-2021 (main branch)
+Chia version 1.1.6 as of: 21-5-2021 (latest branch)
 
 Swar Plot Manager version 0.1.0 as of: 20-5-2021
 
