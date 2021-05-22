@@ -9,7 +9,7 @@ https://hub.docker.com/r/ryanwarwick/chia-docker-vnc-desktop
 ```docker run  -p 8444:8444 -p 8084:80 --name chia-docker-vnc-deskto -v /dev/shm:/dev/shm -v /mnt/plotting:/plotting -v /mnt/plots:/plots -v /mnt/.chia:/home/$USER/.chia  --cap-add=SYS_ADMIN ryanwarwick/chia-docker-vnc-desktop:latest```
 
 <b>!Specify the KEYS Env Variable to use your own persistent set of keys. Otherwise new keys will be created on every container run!</b>
-```e.g. -e KEYS="/home/$USER/.chia/test.txt"``` <- ensure test.txt exists in your actual host's directory where .chia is located.
+```e.g. -e KEYS="/home/$USER/.chia/mnemonic.txt"``` <- ensure test.txt exists in your actual host's directory where .chia is located.
 
 <h3>WHERE:</h3>
 <ul>
