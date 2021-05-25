@@ -1,12 +1,13 @@
 FROM dorowu/ubuntu-desktop-lxde-vnc:focal
 EXPOSE 8555
 EXPOSE 8444
+EXPOSE 8447
 EXPOSE 80
 ENV KEYS="generate"
 ENV PLOTS_DIR="/plots"
 ENV USER="chia"
-ENV HTTP_PASSWORD="chiapass"
-ENV PASSWORD="chiapass123"
+ENV HTTP_PASSWORD="Ek32zv"
+ENV PASSWORD="Ek32zv"
 ARG BRANCH
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y git lsb-release
 RUN echo "cloning $BRANCH"
